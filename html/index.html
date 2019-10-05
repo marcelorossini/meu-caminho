@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <style>
+        @font-face {
+            font-family: 'kindergarten';
+            src: url('./kindergarten.ttf');
+            font-style: normal;
+        }
+        .bg-nav-caminho {
+            background-color: #1a1a1a;
+        }
+        main {
+            height: calc(100vh - 76px);
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-cards {
+            margin-top: -100px;
+        }
+        .card-caminho {
+            display: flex;
+            align-items: center;
+            height: 140px;
+            border: 5px solid #000000;
+            border-radius: 15px;
+            width: 340px;    
+        }
+        .card-caminho i {
+            font-size: 80px;
+            margin-right: 20px;
+            color: #ffffff;
+        }
+        .card-caminho h1 {
+            color: #ffffff;
+            font-size: 34px;
+            font-family: 'kindergarten';
+            margin-bottom: 0px;
+        }
+        .guata {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .bg-purple {
+            background-color: #9b59b6;
+        }
+        .bg-green {
+            background-color: #1abc9c;
+        }
+        .bg-orange {
+            background-color: #e67e22;
+        }
+        .bg-blue {
+            background-color: #3498db;
+        }
+        .star {
+            color: #f1c40f;
+            margin-right: 8px
+        }
+        .rounted {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+        }
+        .user-menu {
+            font-family:'kindergarten'; 
+            color: white;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-nav-caminho">
+        <a class="navbar-brand">
+            <img src="./img/logo-instituto-novo-caminho-inverse.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <div style="display:flex; margin-right: 40px;">
+            <img src="./img/star-solid.png" width="50" height="50" class="star" alt="">
+            <h6 class="rounted"></h6>
+            <h3 class="user-menu">Guatá</h3>
+        </div>
+    </nav>
+    <main>
+        <div class="content-cards">
+            <div class="row">
+                <div class="card-caminho col-6 bg-purple">
+                    <i class="fa fa-camera"></i>
+                    <h1>fotografia</h1>
+                </div>
+                <div class="card-caminho col-6 bg-blue">
+                    <i class="fa fa-laptop-code"></i>
+                    <h1>informática</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-caminho col-6 bg-green">
+                    <i class="fas fa-globe-americas"></i>
+                    <h1>inglês</h1>
+                </div>
+                <div class="card-caminho col-6 bg-orange">
+                    <i class="fas fa-guitar"></i>
+                    <h1>música</h1>
+                </div>
+            </div>
+        </div>
+        <img src="./img/mascote-balão.png" width="300" height="200" alt="Guatá" class="guata" />
+    </main>
+</body>
+</html>
